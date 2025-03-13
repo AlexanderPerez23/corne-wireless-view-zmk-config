@@ -55,7 +55,7 @@ name: name##_macro {                      \
 // |           |           |           |           |           |          |      |           |            |           |           |           |           |
 // |     ESC   |     A     |     O     |     E     |     U     |     I    |      |     D     |     H      |     T     |     N     |     S     |    BKP    |
 // |           |           |           |           |           |          |      |           |            |           |           |           |           |
-      &kp ESC      &kp A      &kp O        &kp E       &kp U       &kp I           &kp D         &kp H        &kp T       &kp N       &kp S      &kp BSPC
+      &kp ESC   &mt LWIN A  &mt RALT O &mt LCTRL E &mt LSHFT U     &kp I           &kp D      &mt LSHFT H  &mt LCTRL T &mt RALT N  &mt LWIN S   &kp BSPC
 // ________________________________________________________________________      __________________________________________________________________________
 // |           |           |           |           |           |          |      |           |            |           |           |           |           |
 // |    SHFT   |     ;     |     Q     |     J     |     K     |     X    |      |     B     |     M      |     W     |     V     |     Z     |    GUI    |
