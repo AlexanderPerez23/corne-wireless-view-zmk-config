@@ -10,6 +10,7 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
+
 / {
     behaviors {
         hml: home_row_mod_left {
@@ -20,9 +21,11 @@
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;
             bindings = <&kp>, <&kp>;
+
             hold-trigger-key-positions = < 12 13 14 15 >; // List of keys on the right side of the keyboard
             hold-trigger-on-release;
         };
+
         hmr: home_row_mod_right {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -31,11 +34,13 @@
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;
             bindings = <&kp>, <&kp>;
+
             hold-trigger-key-positions = < 18 19 20 21 >; // List of keys on the left side of the keyboard
             hold-trigger-on-release;
         };
     };
 };
+
 / {
     combos {
         compatible = "zmk,combos";
@@ -96,10 +101,10 @@
 
         default_layer {
             bindings = <
-&kp TAB    &kp SQT     &kp COMMA   &kp DOT      &kp P        &kp Y        &kp F      &kp G            &kp C         &kp R       &kp L       &kp DEL
-&kp ESC    &hml LGUI A  &hml LALT O  &hml LCTRL E  &hml LSHFT U  &kp I        &kp D      &hmr RSHFT H      &hmr RCTRL T   &hmr RALT N  &hmr RGUI S  &kp BSPC
-&kp LSHFT  &kp SEMI    &kp Q       &kp J        &kp K        &kp X        &kp B      &kp M            &kp W         &kp V       &kp Z       &kp LWIN
-                                   &lt 4 TAB    &lt 5 ESC    &kp SPACE    &lt 1 RET  &lt 2 BACKSPACE  &lt 3 DELETE
+&kp TAB    &kp SQT      &kp COMMA    &kp DOT       &kp P         &kp Y          &kp F      &kp G            &kp C         &kp R        &kp L        &kp DEL
+&kp ESC    &hml LGUI A  &hml LALT O  &hml LCTRL E  &hml LSHFT U  &kp I          &kp D      &hmr RSHFT H     &hmr RCTRL T  &hmr RALT N  &hmr RGUI S  &kp BSPC
+&kp LSHFT  &kp SEMI     &kp Q        &kp J         &kp K         &kp X          &kp B      &kp M            &kp W         &kp V        &kp Z        &kp LWIN
+                                     &lt 4 TAB     &lt 5 ESC     &lt 6 SPACE    &lt 1 RET  &lt 2 BACKSPACE  &lt 3 DELETE
             >;
         };
 
