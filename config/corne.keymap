@@ -22,7 +22,7 @@
             quick-tap-ms = <175>;
             bindings = <&kp>, <&kp>;
 
-            hold-trigger-key-positions = < 12 13 14 15 >; // List of keys on the right side of the keyboard
+            hold-trigger-key-positions = <13 14 15 16>; // List of keys on the right side of the keyboard
             hold-trigger-on-release;
         };
 
@@ -35,7 +35,7 @@
             quick-tap-ms = <175>;
             bindings = <&kp>, <&kp>;
 
-            hold-trigger-key-positions = < 18 19 20 21 >; // List of keys on the left side of the keyboard
+            hold-trigger-key-positions = <19 20 21 22>; // List of keys on the left side of the keyboard
             hold-trigger-on-release;
         };
     };
@@ -104,7 +104,7 @@
 &kp TAB    &kp SQT      &kp COMMA    &kp DOT       &kp P         &kp Y          &kp F      &kp G            &kp C         &kp R        &kp L        &kp DEL
 &kp ESC    &hml LGUI A  &hml LALT O  &hml LCTRL E  &hml LSHFT U  &kp I          &kp D      &hmr RSHFT H     &hmr RCTRL T  &hmr RALT N  &hmr RGUI S  &kp BSPC
 &kp LSHFT  &kp SEMI     &kp Q        &kp J         &kp K         &kp X          &kp B      &kp M            &kp W         &kp V        &kp Z        &kp LWIN
-                                     &lt 4 TAB     &lt 5 ESC     &lt 6 SPACE    &lt 1 RET  &lt 2 BACKSPACE  &lt 3 DELETE
+                                     &lt 4 TAB     &lt 6 ESC     &lt 5 SPACE    &lt 1 RET  &lt 2 BACKSPACE  &lt 3 DELETE
             >;
         };
 
